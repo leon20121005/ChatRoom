@@ -53,6 +53,4 @@ socketio.on('connection', function(socket){
     });
 });
 
-http.listen(port, function(){
-    console.log("Running on PORT: " + port);
-});
+http.listen(process.env.PORT || 5000);
